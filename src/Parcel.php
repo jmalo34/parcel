@@ -6,7 +6,7 @@
         private $width;
         private $weight;
 
-        function __construct ($height, $length, $width, $weight)
+        function __construct ($height = 0, $length = 0, $width = 0, $weight = 0)
         {
             $this->height = $height;
             $this->length = $length;
@@ -21,7 +21,7 @@
 
         function setHeight ($new_height)
         {
-            $this->height = (float) $new_height;
+            $this->height = (integer) $new_height;
         }
 
         function getLength ()
@@ -31,7 +31,7 @@
 
         function setLength ($new_length)
         {
-            $this->length = (float) $new_length;
+            $this->length = (integer) $new_length;
         }
 
         function getWidth ()
@@ -41,7 +41,7 @@
 
         function setWidth ($new_width)
         {
-            $this->width = (float) $new_width;
+            $this->width = (integer) $new_width;
         }
 
         function getWeight ()
@@ -51,7 +51,7 @@
 
         function setWeight ($new_weight)
         {
-            $this->weight = (float) $new_weight;
+            $this->weight = (integer) $new_weight;
         }
 
         function volume()
